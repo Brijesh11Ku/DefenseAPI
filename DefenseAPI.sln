@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefenseAPI", "DefenseAPI\DefenseAPI.csproj", "{A6861D1A-84DA-47A5-B64A-9488124761A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGatway", "APIGatway\APIGatway.csproj", "{5DE8B425-532D-4FBF-82EE-0A47A4A6A525}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A6861D1A-84DA-47A5-B64A-9488124761A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6861D1A-84DA-47A5-B64A-9488124761A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6861D1A-84DA-47A5-B64A-9488124761A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE8B425-532D-4FBF-82EE-0A47A4A6A525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE8B425-532D-4FBF-82EE-0A47A4A6A525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE8B425-532D-4FBF-82EE-0A47A4A6A525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE8B425-532D-4FBF-82EE-0A47A4A6A525}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

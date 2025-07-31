@@ -1,7 +1,10 @@
 ﻿using DefenseAPI;
 using DefenseAPI.Controllers;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 using System.Globalization;
 using System.Net;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +36,10 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod()
             .AllowCredentials()); // if needed for cookies/auth
 });
+//builder.Configuration.AddJsonFile("C:\\Users\\Brijesh Kuar\\Downloads\\DefenseProject\\DefenseProject\\DefenseAPI\\APIGatway\\ocelot.json");
+//builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+//builder.Configuration.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "package.json"), optional: false, reloadOnChange: true);
+//builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 app.UseCors("AllowAngularApp");
@@ -49,5 +56,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+//await app.UseOcelot();
 
 app.Run();
